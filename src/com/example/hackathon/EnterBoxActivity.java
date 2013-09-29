@@ -21,8 +21,9 @@ public class EnterBoxActivity extends Activity {
 		super.onCreate(savedInstanceState);
 
 	    // Get the message from the intent
-	    Intent intent = getIntent();
-	    String message = intent.getStringExtra(EnterMenuActivity.EXTRA_MESSAGE);
+	    //Intent intent = getIntent();
+	    //String message = intent.getStringExtra(EnterMenuActivity.EXTRA_MESSAGE);
+	    //global.total_money = Float.parseFloat(message);
 
 	 // Set the text view as the activity layout
 	    setContentView(R.layout.activity_enter_box);
@@ -31,6 +32,8 @@ public class EnterBoxActivity extends Activity {
 	    
 	    // Create the text view
 	    TextView t=(TextView)findViewById(R.id.box_amount);
+	    
+	    String message = String.valueOf(global.total_money);
 	    message="$ "+message;
 	    t.setText(message);
 	    t.setTextColor(Color.RED);
@@ -45,21 +48,27 @@ public class EnterBoxActivity extends Activity {
 	        	switch(i++){
 	        	case 1:idk=(ImageView)findViewById(R.id.box1);
 	        			idk.setVisibility(View.VISIBLE);
+	        			idk.setClickable(true);
 	        		break;
 	        	case 2:idk=(ImageView)findViewById(R.id.box2);
 	        			idk.setVisibility(View.VISIBLE);
+	        			idk.setClickable(true);
 	        		break;
 	        	case 3:idk=(ImageView)findViewById(R.id.box3);
     					idk.setVisibility(View.VISIBLE);
+    					idk.setClickable(true);
 	        		break;
 	        	case 4:idk=(ImageView)findViewById(R.id.box4);
     					idk.setVisibility(View.VISIBLE);
+    					idk.setClickable(true);
 	        		break;
 	        	case 5:idk=(ImageView)findViewById(R.id.box5);
     					idk.setVisibility(View.VISIBLE);
+    					idk.setClickable(true);
 	        		break;
 	        	case 6:idk=(ImageView)findViewById(R.id.box6);
     					idk.setVisibility(View.VISIBLE);
+    					idk.setClickable(true);
 	        		break;
 	        	}
 	        }
@@ -74,16 +83,22 @@ public class EnterBoxActivity extends Activity {
 	        	ImageView idk;
 	        	idk=(ImageView)findViewById(R.id.box1);
 				idk.setVisibility(View.INVISIBLE);
+				idk.setClickable(false);
 	        	idk=(ImageView)findViewById(R.id.box2);
 				idk.setVisibility(View.INVISIBLE);
+				idk.setClickable(false);
 	        	idk=(ImageView)findViewById(R.id.box3);
 				idk.setVisibility(View.INVISIBLE);
+				idk.setClickable(false);
 	        	idk=(ImageView)findViewById(R.id.box4);
 				idk.setVisibility(View.INVISIBLE);
+				idk.setClickable(false);
 	        	idk=(ImageView)findViewById(R.id.box5);
 				idk.setVisibility(View.INVISIBLE);
+				idk.setClickable(false);
 	        	idk=(ImageView)findViewById(R.id.box6);
 				idk.setVisibility(View.INVISIBLE);
+				idk.setClickable(false);
 				i=0;
 	        }
 	    });
@@ -120,6 +135,11 @@ public class EnterBoxActivity extends Activity {
 			return true;
 		}
 		return super.onOptionsItemSelected(item);
+	}
+	
+	public void enterLast(View view){
+        Intent intent = new Intent(this, EnterLastActivity.class);
+        startActivity(intent);
 	}
 
 }

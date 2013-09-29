@@ -29,7 +29,7 @@ public final class R {
         public static final int second_background=0x7f020005;
     }
     public static final class id {
-        public static final int action_settings=0x7f08000d;
+        public static final int action_settings=0x7f080012;
         public static final int add_box=0x7f080002;
         public static final int box1=0x7f080009;
         public static final int box2=0x7f080008;
@@ -39,26 +39,34 @@ public final class R {
         public static final int box6=0x7f080004;
         public static final int box_amount=0x7f08000a;
         public static final int clear_all=0x7f080001;
-        public static final int imageView1=0x7f08000c;
-        public static final int menu_amount=0x7f08000b;
+        public static final int imageView1=0x7f080011;
+        public static final int last_budget=0x7f08000d;
+        public static final int last_confirm=0x7f08000f;
+        public static final int last_expenses=0x7f08000e;
+        public static final int last_id=0x7f08000c;
+        public static final int menu_amount=0x7f080010;
         public static final int textView1=0x7f080000;
         public static final int textView2=0x7f080003;
+        public static final int textView3=0x7f08000b;
     }
     public static final class layout {
         public static final int activity_enter_box=0x7f030000;
-        public static final int activity_enter_menu=0x7f030001;
-        public static final int activity_main=0x7f030002;
+        public static final int activity_enter_last=0x7f030001;
+        public static final int activity_enter_menu=0x7f030002;
+        public static final int activity_main=0x7f030003;
     }
     public static final class menu {
         public static final int enter_box=0x7f070000;
-        public static final int enter_menu=0x7f070001;
-        public static final int main=0x7f070002;
+        public static final int enter_last=0x7f070001;
+        public static final int enter_menu=0x7f070002;
+        public static final int main=0x7f070003;
     }
     public static final class string {
         public static final int action_settings=0x7f050001;
         public static final int app_name=0x7f050000;
         public static final int hello_world=0x7f050002;
         public static final int title_activity_enter_box=0x7f050004;
+        public static final int title_activity_enter_last=0x7f050005;
         public static final int title_activity_enter_menu=0x7f050003;
     }
     public static final class style {

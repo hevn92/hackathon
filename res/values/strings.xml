@@ -6,5 +6,6 @@
     <string name="hello_world">Hello world!</string>
     <string name="title_activity_enter_menu">EnterMenuActivity</string>
     <string name="title_activity_enter_box">EnterBoxActivity</string>
+    <string name="title_activity_enter_last">EnterLastActivity</string>
 
 </resources>

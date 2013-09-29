@@ -35,6 +35,8 @@
         android:layout_alignRight="@+id/clear_all"
         android:layout_alignTop="@+id/box5"
         android:layout_marginRight="18dp"
+        android:clickable="false"
+        android:onClick="enterLast"
         android:src="@drawable/pouch"
         android:visibility="invisible" />
 
@@ -45,6 +47,8 @@
         android:layout_alignLeft="@+id/box3"
         android:layout_below="@+id/box3"
         android:layout_marginTop="47dp"
+        android:clickable="false"
+        android:onClick="enterLast"
         android:src="@drawable/pouch"
         android:visibility="invisible" />
 
@@ -55,6 +59,8 @@
         android:layout_alignLeft="@+id/box6"
         android:layout_below="@+id/textView2"
         android:layout_marginTop="161dp"
+        android:clickable="false"
+        android:onClick="enterLast"
         android:src="@drawable/pouch"
         android:visibility="invisible" />
 
@@ -65,6 +71,8 @@
         android:layout_alignLeft="@+id/box4"
         android:layout_below="@+id/textView2"
         android:layout_marginTop="40dp"
+        android:clickable="false"
+        android:onClick="enterLast"
         android:src="@drawable/pouch"
         android:visibility="invisible" />
 
@@ -96,6 +104,8 @@
         android:layout_height="wrap_content"
         android:layout_alignRight="@+id/textView1"
         android:layout_alignTop="@+id/box2"
+        android:clickable="false"
+        android:onClick="enterLast"
         android:src="@drawable/pouch"
         android:visibility="invisible" />
 
@@ -105,7 +115,9 @@
         android:layout_height="wrap_content"
         android:layout_alignLeft="@+id/box1"
         android:layout_alignTop="@+id/box4"
+        android:clickable="false"
         android:fitsSystemWindows="true"
+        android:onClick="enterLast"
         android:src="@drawable/pouch"
         android:visibility="invisible" />
 

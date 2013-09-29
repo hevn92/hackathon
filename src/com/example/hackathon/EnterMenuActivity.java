@@ -58,10 +58,13 @@ public class EnterMenuActivity extends Activity {
     public void enterBox(View view) {
     	EditText ed=(EditText)findViewById(R.id.menu_amount);
     	if(ed.getText().toString().length()==0) return;
+    	
         Intent intent = new Intent(this, EnterBoxActivity.class);
+        
         EditText editText = (EditText) findViewById(R.id.menu_amount);
         String message = editText.getText().toString();
-        intent.putExtra(EXTRA_MESSAGE, message);
+        global.total_money = Float.parseFloat(message); //store it in global variable
+        //intent.putExtra(EXTRA_MESSAGE, message);
         startActivity(intent);
     }
 	
